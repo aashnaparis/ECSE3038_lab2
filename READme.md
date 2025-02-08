@@ -3,19 +3,19 @@ The essential functions in this codes is the post request and get request. Essen
 
 ## GET Request
 Thus function is used to parse through each dictionary that we know will be in the list 
-'''Python data = []'''  which is then added in a new list '''Python person_x=[] ''' where it displays all the dictionary in posted to the list.
-'''Python
+```Python data = []```  which is then added in a new list ```Python person_x=[] ``` where it displays all the dictionary in posted to the list.
+```Python
 ...
 person_x = []
 for element in data:
     persons = element
     person_x.append(persons)
 return {"Database" : person_x}
-'''
+```
 
 ### POST Request
 This function takes an object arguement with variable type "Person", which is the class created earlier. Thus the arguement has fields consistent with the Person class. Within the function a if loop is present to strip and check if the name, occupation and address has been posted correctly.
-'''Python
+```Python
 ...
 if (person_request.name.strip() == "" 
         or person_request.occupation.strip() == ""
@@ -26,7 +26,7 @@ if (person_request.name.strip() == ""
 return {"success" : True,
             "result" : data_json}
 
-'''
+```
 
 The exercise was done under lab/assignment for ECSE3038
 
